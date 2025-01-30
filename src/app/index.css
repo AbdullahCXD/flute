@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(139, 92, 246, 0.2);
+  color: #f3f4f6;
+}
+
+/* Focus Outline */
+:focus {
+  outline: 2px solid rgba(139, 92, 246, 0.5);
+  outline-offset: 2px;
+}
+
+/* Custom Animations */
+@keyframes soundbar {
+  0% {
+    height: 8px;
+  }
+  100% {
+    height: 16px;
+  }
+}
+
+/* App Region for Electron */
+.app-drag {
+  -webkit-app-region: drag;
+}
+
+.app-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-violet-950/20;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-violet-800/30 rounded-full hover:bg-violet-700/40 transition-colors;
+}
+
+/* Custom animations */
+@keyframes soundbar {
+  0% {
+    height: 5px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+/* Disable default focus on buttons */
+button:focus {
+  @apply ring-0 ring-offset-0;
+}
+
+/* Custom focus for buttons */
+button:focus-visible {
+  @apply ring-2 ring-violet-500/50 ring-offset-1 ring-offset-violet-950;
+}
