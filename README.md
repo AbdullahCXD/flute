@@ -43,7 +43,7 @@ A modern, elegant music player built with Electron, React, and TypeScript. Featu
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm or yarn
+- npm or yarn or pnpm
 - Git
 
 ### Installation
@@ -59,6 +59,8 @@ cd flute
 npm install
 # or
 yarn install
+# or
+pnpm install
 ```
 
 3. Start the development server:
@@ -66,6 +68,8 @@ yarn install
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
 ```
 
 ### Building
@@ -76,6 +80,8 @@ To create a production build:
 npm run build
 # or
 yarn build
+# or
+pnpm build
 ```
 
 ## 🎮 Usage
